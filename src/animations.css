@@ -1,0 +1,58 @@
+.hero-copy{animation:reveal-up .8s cubic-bezier(.2,.7,.25,1) both}
+.hero-art{animation:reveal-stage 1s .12s cubic-bezier(.2,.7,.25,1) both}
+.brand-dot{animation:status-pulse 2.4s ease-in-out infinite}
+.floating-card{animation:card-hover 5s ease-in-out infinite}
+.card-b{animation-delay:-2.2s}
+.ram-stage{isolation:isolate}
+.ram-stage::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(112deg,transparent 25%,#b6fff00b 42%,#b6fff01b 48%,transparent 58%);transform:translateX(-100%);animation:stage-sheen 9s 1.2s ease-in-out infinite}
+.ram-hint{z-index:2}
+.feature-grid article,.timeline article,.refs-grid div{transition:transform .3s ease,border-color .3s ease,background-color .3s ease}
+.feature-grid article:hover,.timeline article:hover,.refs-grid div:hover{transform:translateY(-4px);border-color:#54dfcf44;background-color:#0a191d}
+.component,.type-tabs button,.answers button,.primary,.secondary{transition:transform .25s ease,border-color .25s ease,background-color .25s ease,color .25s ease}
+.component:hover{transform:translateX(4px)}
+.type-tabs button:hover,.answers button:hover{transform:translateY(-2px)}
+.primary:hover{transform:translateY(-2px);box-shadow:0 10px 28px #52d8ff30}
+.feedback{animation:reveal-up .35s ease both}
+.source-note{color:#71879a;font-size:12px;line-height:1.7;margin-top:24px}
+.compare .two-col{align-items:center}
+.component{width:100%;padding:22px;border:1px solid #ffffff0b;border-radius:14px;background:#07111b;color:#eaf4ff;font:inherit;text-align:left;cursor:pointer}
+.component:focus-visible,.component-reset:focus-visible{outline:2px solid #54dfcf;outline-offset:3px}
+.component-reset{justify-self:start;padding:10px 12px;border:1px solid #ffffff18;border-radius:9px;background:#08131e;color:#a9bbc9;font:inherit;font-size:11px;font-weight:700;cursor:pointer;transition:color .2s ease,border-color .2s ease,background-color .2s ease}
+.component-reset:hover{border-color:#54dfcf66;background:#0a191d;color:#eaf4ff}
+.ram-focus-label{position:absolute;top:16px;right:18px;z-index:2;padding:7px 10px;border:1px solid #a3c4b82a;border-radius:999px;background:#061511cc;backdrop-filter:blur(10px);color:#a9dccc;font-size:9px;font-weight:700;letter-spacing:.12em}
+.demo-layout>div:first-child{min-width:0;height:560px}
+@media(max-width:600px){.demo-layout>div:first-child{height:380px}}
+.site-footer{display:block;padding:0 5vw;border-top:1px solid #ffffff0a}
+.footer-tech-carousel{max-width:1250px;margin:auto;padding:52px 0 38px;border-bottom:1px solid #ffffff0a}
+.footer-tech-header{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:22px}
+.footer-tech-header h2{margin:8px 0 0;color:#eaf4ff;font:600 25px 'Space Grotesk'}
+.tech-controls{display:flex;align-items:center;gap:10px}
+.tech-controls button{display:grid;place-items:center;width:38px;height:38px;border:1px solid #294451;border-radius:8px;background:#08141b;color:#a8c3c5;font-size:23px;line-height:1;cursor:pointer;transition:color .2s ease,border-color .2s ease,background-color .2s ease,transform .2s ease}
+.tech-controls button:hover{transform:translateY(-2px);border-color:#54dfcf88;background:#0a201d;color:#8cf3da}
+.tech-counter{min-width:48px;color:#71879a;text-align:center;font-size:10px;font-variant-numeric:tabular-nums}
+.tech-viewport{overflow:hidden}
+.tech-page{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;animation:tech-enter .4s cubic-bezier(.2,.7,.25,1) both}
+.tech-card{display:flex;min-width:0;min-height:88px;align-items:center;gap:13px;padding:16px;border:1px solid #ffffff12;border-radius:8px;background:linear-gradient(115deg,#0a191d,#07121a);color:inherit;transition:transform .25s ease,border-color .25s ease,background-color .25s ease}
+.tech-card:hover{transform:translateY(-3px);border-color:#54dfcf55;background:#0b1d20}
+.tech-mark{display:grid;width:42px;height:42px;flex:0 0 42px;place-items:center;border:1px solid #62decf35;border-radius:8px;background:#0c2725;color:#88ecd6;font:700 11px 'Space Grotesk';overflow-wrap:anywhere}
+.tech-info{display:grid;min-width:0;gap:5px}
+.tech-info strong{color:#e0ecea;font:600 13px 'Space Grotesk';overflow-wrap:anywhere}
+.tech-info small{color:#718b8f;font-size:10px;line-height:1.45}
+.tech-external{margin-left:auto;color:#61858a;font-size:13px;transition:color .2s ease,transform .2s ease}
+.tech-card:hover .tech-external{transform:translate(2px,-2px);color:#88ecd6}
+.footer-bottom{display:flex;max-width:1250px;min-height:86px;align-items:center;justify-content:space-between;gap:18px;margin:auto;color:#627789}
+.footer-bottom p{margin:0;font-size:12px}
+.footer-bottom small{font-size:9px;letter-spacing:.13em}
+.refs-grid a{display:block;height:100%;color:inherit}
+.reference-link{display:inline-flex;align-items:center;gap:6px;margin-top:15px;color:#61dccc;font-size:11px;font-weight:700}
+.refs-grid a:hover .reference-link{color:#b0fff0}
+.tech-controls button:focus-visible,.tech-card:focus-visible,.refs-grid a:focus-visible{outline:2px solid #63dfcf;outline-offset:4px}
+@keyframes tech-enter{from{opacity:0;transform:translateX(14px)}to{opacity:1;transform:translateX(0)}}
+@media(max-width:950px){.site-footer{padding:0 20px}.tech-page{grid-template-columns:repeat(2,minmax(0,1fr))}.footer-bottom{flex-wrap:wrap}}
+@media(max-width:600px){.footer-tech-carousel{padding:42px 0 30px}.footer-tech-header{align-items:start;flex-direction:column}.footer-tech-header h2{font-size:22px}.tech-page{grid-template-columns:minmax(0,1fr)}.tech-card{min-height:76px;padding:14px}.footer-bottom{display:grid;gap:8px;padding:24px 0 30px}.footer-bottom p{margin:8px 0}.footer-bottom small{line-height:1.7}}
+@keyframes reveal-up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes reveal-stage{from{opacity:0;transform:translateX(20px) scale(.985)}to{opacity:1;transform:translateX(0) scale(1)}}
+@keyframes status-pulse{0%,100%{box-shadow:0 0 8px #4ce1ff66}50%{box-shadow:0 0 19px #4ce1ff}}
+@keyframes card-hover{0%,100%{translate:0 0}50%{translate:0 -7px}}
+@keyframes stage-sheen{0%,68%,100%{transform:translateX(-100%)}88%{transform:translateX(100%)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
